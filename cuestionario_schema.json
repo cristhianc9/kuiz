@@ -1,0 +1,62 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Identificador único de la pregunta."
+      },
+      "tipo": {
+        "type": "string",
+        "description": "Tipo de pregunta (ej. 'simple', 'verdadero_falso', 'multiple').",
+        "enum": ["simple", "verdadero_falso", "multiple"]
+      },
+      "tema": {
+        "type": "string",
+        "description": "Tema al que pertenece la pregunta."
+      },
+      "pregunta": {
+        "type": "string",
+        "description": "Texto de la pregunta."
+      },
+      "opciones": {
+        "type": ["array", "null"],
+        "description": "Array de objetos de opciones para preguntas de tipo 'simple' o 'multiple'. Null para 'verdadero_falso'.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Identificador de la opción (ej. 'a', 'b')."
+            },
+            "texto": {
+              "type": "string",
+              "description": "Texto de la opción."
+            }
+          },
+          "required": ["id", "texto"]
+        }
+      },
+      "respuesta": {
+        "type": "array",
+        "description": "Array de strings con los IDs de las respuestas correctas o 'verdadero'/'falso'.",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      },
+      "justificaciones": {
+        "type": "object",
+        "description": "Objeto que contiene las justificaciones para cada respuesta correcta.",
+        "patternProperties": {
+          "^[a-z]$|^verdadero$|^falso$": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "required": ["id", "tipo", "tema", "pregunta", "respuesta", "justificaciones"]
+  }
+}

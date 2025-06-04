@@ -1,0 +1,11 @@
+{
+  "numQuestions": 20,
+  "questionTimeLimit": 30,
+  "timerDisplayType": "horizontal",
+  "timeExpiredBehavior": "markIncorrectAndAllowContinue",
+  "scoreColors": {
+    "green": { "min": 70, "color": [39, 174, 96] },
+    "yellow": { "min": 50, "color": [241, 196, 15] },
+    "red": { "min": 0, "color": [231, 76, 60] }
+  }
+}

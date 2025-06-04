@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(html => document.head.innerHTML += html);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Resultados del Cuestionario</h1>
+    <div id="results-container"></div>
+    <div class="results-actions">
+        <button id="download-pdf-button">Descargar PDF</button>
+        <a href="index.html" id="volver-button">Volver al Cuestionario</a>
+    </div>
+    <script type="module" src="src/infrastructure/ui/results-page.js"></script>
+    <script>
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = html;
+                while (tempDiv.firstChild) {
+                    document.body.appendChild(tempDiv.firstChild);
+                }
+            });
+    </script>
+</body>
+</html>

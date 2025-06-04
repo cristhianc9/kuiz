@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(html => document.head.innerHTML += html);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="quiz-header">
+        <img src="img/logo/logo.png" alt="Logo" class="quiz-header-logo">
+        <span class="quiz-title">Kuiz</span>
+    </div>
+    <div id="input-form-placeholder" class="form-card"></div>
+    <div id="quiz-container" style="display: none;">
+    </div>
+    <button id="submit-button">Finalizar Cuestionario</button>
+    <script>
+        fetch('components/input-form.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('input-form-placeholder').innerHTML = html;
+                // Mover la lógica de inicialización del botón Iniciar aquí
+                // Obtener los elementos del formulario directamente después de que se haya cargado
+                const nombreInput = document.getElementById('nombre');
+                const identificacionInput = document.getElementById('identificacion');
+                const iniciarButton = document.getElementById('iniciar-button');
+                const errorMessage = document.getElementById('error-message');
+
+                import('./src/application/quiz-service.js').then(({ initializeQuiz }) => {
+                    if (iniciarButton) {
+                        iniciarButton.addEventListener('click', () => {
+                            if (nombreInput.value === '' || identificacionInput.value === '') {
+                                errorMessage.style.display = 'block';
+                            } else {
+                                errorMessage.style.display = 'none';
+                                const inputFormPlaceholder = document.getElementById('input-form-placeholder');
+                                if (inputFormPlaceholder) {
+                                    inputFormPlaceholder.style.display = 'none';
+                                }
+                                initializeQuiz();
+                                sessionStorage.setItem('nombre', nombreInput.value);
+                                sessionStorage.setItem('identificacion', identificacionInput.value);
+                            }
+                        });
+                    }
+                });
+            });
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = html;
+                while (tempDiv.firstChild) {
+                    document.body.appendChild(tempDiv.firstChild);
+                }
+            });
+    </script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

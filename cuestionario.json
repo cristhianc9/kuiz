@@ -1,0 +1,1656 @@
+[
+  {
+    "id": "1",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Cuál palabra clave se usa para declarar una excepción en PL/SQL?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "EXCEPTION"
+      },
+      {
+        "id": "b",
+        "texto": "DECLARE"
+      },
+      {
+        "id": "c",
+        "texto": "CATCH"
+      },
+      {
+        "id": "d",
+        "texto": "RAISE"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "En PL/SQL, la palabra clave `EXCEPTION` se utiliza para definir la sección de manejo de excepciones en un bloque, permitiendo capturar y gestionar errores en tiempo de ejecución. Documentación oficial: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/plsql-errors-and-exceptions.html"
+    }
+  },
+  {
+    "id": "2",
+    "tipo": "simple",
+    "tema": "Clean Code",
+    "pregunta": "¿Cuál es una característica deseable de una función según 'Clean Code'?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Brevedad"
+      },
+      {
+        "id": "b",
+        "texto": "Complejidad"
+      },
+      {
+        "id": "c",
+        "texto": "Dependencia externa"
+      },
+      {
+        "id": "d",
+        "texto": "Alta cohesión"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "Una función debe ser breve y realizar una sola tarea, lo que facilita su comprensión, mantenimiento y prueba. Fuente: https://www.oreilly.com/library/view/clean-code/9780136083238/"
+    }
+  },
+  {
+    "id": "3",
+    "tipo": "simple",
+    "tema": "Oracle (Admin DB)",
+    "pregunta": "¿Cuál vista contiene información sobre los tablespaces?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "DBA_TABLESPACES"
+      },
+      {
+        "id": "b",
+        "texto": "V$TABLESPACE"
+      },
+      {
+        "id": "c",
+        "texto": "ALL_TABLES"
+      },
+      {
+        "id": "d",
+        "texto": "USER_TABLES"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "La vista `DBA_TABLESPACES` proporciona información sobre todos los tablespaces de la base de datos Oracle, como nombre, estado y tamaño. Fuente: https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/DBA_TABLESPACES.html"
+    }
+  },
+  {
+    "id": "4",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Cuál es la interfaz base para beans con estado?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "javax.ejb.Stateful"
+      },
+      {
+        "id": "b",
+        "texto": "javax.ejb.SessionBean"
+      },
+      {
+        "id": "c",
+        "texto": "javax.ejb.EJBObject"
+      },
+      {
+        "id": "d",
+        "texto": "javax.ejb.LocalBean"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "La anotación `@Stateful` se utiliza para definir un EJB con estado en Java EE, permitiendo que el bean mantenga datos entre llamadas del mismo cliente. Documentación oficial: https://docs.oracle.com/javaee/7/tutorial/ejb-basicexamples004.htm#BNBQA"
+    }
+  },
+  {
+    "id": "5",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿JBoss EAP 7 soporta el estándar Jakarta EE?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "Desde JBoss EAP 7.3 soporta Jakarta EE desde la versión 8.0. Fuente oficial: https://access.redhat.com/articles/113373#EE"
+    }
+  },
+  {
+    "id": "6",
+    "tipo": "verdadero_falso",
+    "tema": "SOLID",
+    "pregunta": "¿El principio SRP implica que una clase debe tener una sola responsabilidad?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "El principio de responsabilidad única (SRP) establece que una clase debe tener una única razón para cambiar, facilitando el mantenimiento y la escalabilidad. Fuente: https://en.wikipedia.org/wiki/Single-responsibility_principle"
+    }
+  },
+  {
+    "id": "7",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (Admin DB)",
+    "pregunta": "¿Un usuario puede conectarse a la base sin privilegio CREATE SESSION?",
+    "opciones": null,
+    "respuesta": [
+      "falso"
+    ],
+    "justificaciones": {
+      "falso": "El privilegio `CREATE SESSION` es obligatorio para que un usuario pueda autenticarse y conectarse a una base de datos Oracle. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SESSION.html"
+    }
+  },
+  {
+    "id": "8",
+    "tipo": "simple",
+    "tema": "SOLID",
+    "pregunta": "¿Cuál principio SOLID sugiere que el código debe ser abierto para extensión pero cerrado para modificación?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "SRP"
+      },
+      {
+        "id": "b",
+        "texto": "OCP"
+      },
+      {
+        "id": "c",
+        "texto": "LSP"
+      },
+      {
+        "id": "d",
+        "texto": "DIP"
+      }
+    ],
+    "respuesta": [
+      "b"
+    ],
+    "justificaciones": {
+      "b": "El principio Open/Closed (OCP) indica que los módulos de software deben poder extenderse sin modificar su código fuente existente. Fuente: https://en.wikipedia.org/wiki/Open–closed_principle"
+    }
+  },
+  {
+    "id": "9",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿JBoss CLI permite gestionar recursos en tiempo de ejecución?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "JBoss CLI permite administrar y configurar recursos del servidor en tiempo real, incluyendo despliegue y gestión de subsistemas. Documentación oficial: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/management_cli_guide/index"
+    }
+  },
+  {
+    "id": "10",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿La sentencia SELECT permite subconsultas en la cláusula FROM?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "En SQL, la cláusula FROM permite subconsultas (tablas derivadas) para generar conjuntos de resultados temporales. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html"
+    }
+  },
+  {
+    "id": "11",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿El archivo standalone-full.xml permite configurar subsistemas como messaging y transactions?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "El archivo `standalone-full.xml` permite definir y gestionar subsistemas avanzados como JMS y JTA en JBoss EAP. Fuente: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/standalone_mode_configuration"
+    }
+  },
+  {
+    "id": "12",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Cuál de los siguientes comandos CLI es correcto para listar despliegues?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "ls /deployment"
+      },
+      {
+        "id": "b",
+        "texto": "list-deploy"
+      },
+      {
+        "id": "c",
+        "texto": "show deployments"
+      },
+      {
+        "id": "d",
+        "texto": "view /deployments"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "El comando `ls /deployment` en JBoss CLI se utiliza para listar todas las aplicaciones desplegadas en el servidor, mostrando su estado y nombre. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/management_cli_guide/index"
+    }
+  },
+  {
+    "id": "13",
+    "tipo": "simple",
+    "tema": "JSF",
+    "pregunta": "¿Cuál anotación se usa para un bean administrado en JSF 2.2?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "@ManagedBean"
+      },
+      {
+        "id": "b",
+        "texto": "@Named"
+      },
+      {
+        "id": "c",
+        "texto": "@Component"
+      },
+      {
+        "id": "d",
+        "texto": "@Inject"
+      }
+    ],
+    "respuesta": [
+      "b"
+    ],
+    "justificaciones": {
+      "b": "En JSF 2.2, la anotación `@Named` (parte de CDI) se utiliza para declarar un bean administrado, lo que permite su inyección y uso en las páginas Facelets. Documentación: https://docs.oracle.com/javaee/7/tutorial/jsf-cdi001.htm"
+    }
+  },
+  {
+    "id": "14",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Un procedimiento PL/SQL puede retornar un valor mediante RETURN?",
+    "opciones": null,
+    "respuesta": [
+      "falso"
+    ],
+    "justificaciones": {
+      "falso": "Un procedimiento PL/SQL no puede retornar un valor directamente mediante la cláusula `RETURN` como lo haría una función. Los procedimientos utilizan parámetros `OUT` o `IN OUT` para devolver valores. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/plsql-overview.html"
+    }
+  },
+  {
+    "id": "15",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se utiliza para declarar un EJB sin estado?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "@Stateless"
+      },
+      {
+        "id": "b",
+        "texto": "@Singleton"
+      },
+      {
+        "id": "c",
+        "texto": "@Entity"
+      },
+      {
+        "id": "d",
+        "texto": "@EJB"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "La anotación `@Stateless` se utiliza en Java EE para declarar un Enterprise JavaBean (EJB) sin estado. Estos beans no mantienen un estado conversacional con el cliente entre llamadas a métodos. Documentación: https://docs.oracle.com/javaee/7/tutorial/ejb-intro.htm"
+    }
+  },
+  {
+    "id": "16",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿Un EJB puede ser llamado de manera remota?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "Los Enterprise JavaBeans (EJB) pueden ser llamados de manera remota si se exponen a través de una interfaz remota (`@Remote`), permitiendo que clientes externos a la JVM del servidor de aplicaciones invoquen sus métodos. Documentación: https://docs.oracle.com/javaee/7/tutorial/ejb-intro.htm"
+    }
+  },
+  {
+    "id": "17",
+    "tipo": "verdadero_falso",
+    "tema": "Clean Code",
+    "pregunta": "¿Clean Code sugiere que los nombres de las variables deben ser abreviados?",
+    "opciones": null,
+    "respuesta": [
+      "falso"
+    ],
+    "justificaciones": {
+      "falso": "Clean Code desaconseja el uso de abreviaturas en los nombres de variables, promoviendo nombres descriptivos y completos que expresen claramente su propósito para mejorar la legibilidad del código. Fuente: Robert C. Martin, Clean Code, 2008"
+    }
+  },
+  {
+    "id": "18",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Qué comando se usa para desplegar una aplicación desde CLI?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "deploy"
+      },
+      {
+        "id": "b",
+        "texto": "add-app"
+      },
+      {
+        "id": "c",
+        "texto": "load"
+      },
+      {
+        "id": "d",
+        "texto": "launch"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "El comando `deploy` en JBoss CLI se utiliza para desplegar una aplicación en el servidor, especificando la ruta al archivo WAR o EAR. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/management_cli_guide/index"
+    }
+  },
+  {
+    "id": "19",
+    "tipo": "verdadero_falso",
+    "tema": "JSF",
+    "pregunta": "¿JSF soporta navegación basada en anotaciones?",
+    "opciones": null,
+    "respuesta": [
+      "verdadero"
+    ],
+    "justificaciones": {
+      "verdadero": "JSF (JavaServer Faces) soporta la navegación implícita y explícita, incluyendo la navegación basada en anotaciones a partir de JSF 2.0, lo que simplifica la configuración de las reglas de navegación. Documentación: https://docs.oracle.com/javaee/7/tutorial/jsf-page-navigation.htm"
+    }
+  },
+  {
+    "id": "20",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué comando SQL se utiliza para modificar datos existentes en una tabla?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "UPDATE"
+      },
+      {
+        "id": "b",
+        "texto": "MERGE"
+      },
+      {
+        "id": "c",
+        "texto": "MODIFY"
+      },
+      {
+        "id": "d",
+        "texto": "SET"
+      }
+    ],
+    "respuesta": [
+      "a"
+    ],
+    "justificaciones": {
+      "a": "El comando `UPDATE` en SQL se utiliza para modificar los datos existentes en una o más filas de una tabla. Se puede usar con una cláusula `WHERE` para especificar qué filas actualizar. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/UPDATE.html"
+    }
+  },
+  {
+    "id": "21",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Dónde se encuentra el archivo de configuración standalone.xml?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "/jboss/config"
+      },
+      {
+        "id": "b",
+        "texto": "/standalone/configuration"
+      },
+      {
+        "id": "c",
+        "texto": "/etc/jboss"
+      },
+      {
+        "id": "d",
+        "texto": "/domain/configuration"
+      }
+    ],
+    "respuesta": [
+      "b"
+    ],
+    "justificaciones": {
+      "b": "El archivo `standalone.xml` es el archivo de configuración principal para JBoss EAP en modo standalone, y se encuentra en el directorio `EAP_HOME/standalone/configuration`. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/standalone_mode_configuration"
+    }
+  },
+  {
+    "id": "22",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se utiliza para inyectar dependencias en un bean de EJB?",
+    "opciones": [
+      { "id": "a", "texto": "@Inject" },
+      { "id": "b", "texto": "@EJB" },
+      { "id": "c", "texto": "@Resource" },
+      { "id": "d", "texto": "@Autowired" }
+    ],
+    "respuesta": ["b"],
+    "justificaciones": {
+      "b": "La anotación @EJB se utiliza para inyectar dependencias de Enterprise JavaBeans en otros beans o componentes gestionados en Java EE. Documentación: https://docs.oracle.com/javaee/7/api/javax/ejb/EJB.html"
+    }
+  },
+  {
+    "id": "23",
+    "tipo": "verdadero_falso",
+    "tema": "SOLID",
+    "pregunta": "¿El principio LSP indica que las subclases deben poder sustituir a sus superclases sin alterar el funcionamiento del programa?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El principio de sustitución de Liskov (LSP) establece que los objetos de una superclase deben poder ser reemplazados por objetos de una subclase sin afectar la corrección del programa. Fuente: https://en.wikipedia.org/wiki/Liskov_substitution_principle"
+    }
+  },
+  {
+    "id": "24",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué comando SQL elimina una tabla de la base de datos?",
+    "opciones": [
+      { "id": "a", "texto": "DROP TABLE" },
+      { "id": "b", "texto": "DELETE TABLE" },
+      { "id": "c", "texto": "REMOVE TABLE" },
+      { "id": "d", "texto": "TRUNCATE TABLE" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El comando DROP TABLE elimina completamente una tabla y todos sus datos de la base de datos. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DROP-TABLE.html"
+    }
+  },
+  {
+    "id": "25",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿La anotación @Singleton garantiza que solo exista una instancia del bean en la aplicación?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "La anotación @Singleton en EJB asegura que solo haya una instancia del bean en toda la aplicación. Documentación: https://docs.oracle.com/javaee/7/api/javax/ejb/Singleton.html"
+    }
+  },
+  {
+    "id": "26",
+    "tipo": "simple",
+    "tema": "Clean Code",
+    "pregunta": "¿Qué recomienda Clean Code sobre el tamaño de las funciones?",
+    "opciones": [
+      { "id": "a", "texto": "Deben ser lo más pequeñas posible" },
+      { "id": "b", "texto": "Deben tener al menos 50 líneas" },
+      { "id": "c", "texto": "No importa el tamaño" },
+      { "id": "d", "texto": "Deben ser grandes para evitar llamadas" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Clean Code recomienda que las funciones sean lo más pequeñas posible para mejorar la legibilidad y mantenibilidad del código. Fuente: Robert C. Martin, Clean Code, 2008"
+    }
+  },
+  {
+    "id": "27",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué comando SQL se utiliza para eliminar todos los registros de una tabla sin eliminar la estructura?",
+    "opciones": [
+      { "id": "a", "texto": "TRUNCATE" },
+      { "id": "b", "texto": "DROP" },
+      { "id": "c", "texto": "DELETE" },
+      { "id": "d", "texto": "REMOVE" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El comando TRUNCATE elimina todos los registros de una tabla rápidamente, pero mantiene la estructura de la tabla. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html"
+    }
+  },
+  {
+    "id": "28",
+    "tipo": "verdadero_falso",
+    "tema": "Java SE",
+    "pregunta": "¿La interfaz List en Java permite elementos duplicados?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "La interfaz List permite almacenar elementos duplicados y mantiene el orden de inserción. Documentación: https://docs.oracle.com/javase/8/docs/api/java/util/List.html"
+    }
+  },
+  {
+    "id": "29",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Cuál es el archivo principal de configuración en JBoss EAP en modo standalone?",
+    "opciones": [
+      { "id": "a", "texto": "standalone.xml" },
+      { "id": "b", "texto": "domain.xml" },
+      { "id": "c", "texto": "jboss.conf" },
+      { "id": "d", "texto": "server.xml" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El archivo standalone.xml es el principal para la configuración de JBoss EAP en modo standalone. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/standalone_mode_configuration"
+    }
+  },
+  {
+    "id": "30",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿La anotación @Stateless en Java EE define un EJB sin estado?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "@Stateless define un Enterprise JavaBean sin estado. Documentación: https://docs.oracle.com/javaee/7/api/javax/ejb/Stateless.html"
+    }
+  },
+  {
+    "id": "31",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Cuál es el tipo de dato adecuado para almacenar fechas en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "DATE" },
+      { "id": "b", "texto": "VARCHAR2" },
+      { "id": "c", "texto": "NUMBER" },
+      { "id": "d", "texto": "CHAR" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El tipo DATE almacena fechas y horas en Oracle PL/SQL. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Data-Types.html"
+    }
+  },
+  {
+    "id": "32",
+    "tipo": "simple",
+    "tema": "Java SE",
+    "pregunta": "¿Cuál es la diferencia principal entre una clase abstracta y una interfaz en Java?",
+    "opciones": [
+      { "id": "a", "texto": "Una interfaz no puede tener métodos con implementación (Java < 8)" },
+      { "id": "b", "texto": "Una clase abstracta no puede tener métodos abstractos" },
+      { "id": "c", "texto": "Una interfaz puede tener constructores" },
+      { "id": "d", "texto": "Una clase abstracta no puede implementar interfaces" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Hasta Java 7, las interfaces no podían tener métodos con implementación, a diferencia de las clases abstractas. Desde Java 8, pueden tener métodos default. Documentación: https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html"
+    }
+  },
+  {
+    "id": "33",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿La anotación @Path se utiliza en JAX-RS para definir recursos REST?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "@Path se usa en JAX-RS (Java EE) para definir la URI de acceso a un recurso REST. Documentación: https://docs.oracle.com/javaee/7/api/javax/ws/rs/Path.html"
+    }
+  },
+  {
+    "id": "34",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué tipo de JOIN retorna todas las filas de la tabla izquierda y las coincidentes de la derecha?",
+    "opciones": [
+      { "id": "a", "texto": "LEFT JOIN" },
+      { "id": "b", "texto": "RIGHT JOIN" },
+      { "id": "c", "texto": "INNER JOIN" },
+      { "id": "d", "texto": "FULL JOIN" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "LEFT JOIN retorna todas las filas de la tabla izquierda y las coincidentes de la derecha, o NULL si no hay coincidencia. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/queries.html"
+    }
+  },
+  {
+    "id": "35",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿El subsistema 'datasources' en JBoss EAP 7 permite configurar conexiones JDBC?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El subsistema 'datasources' permite definir y gestionar conexiones JDBC en JBoss EAP 7. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/datasource_management"
+    }
+  },
+  {
+    "id": "36",
+    "tipo": "simple",
+    "tema": "Java SE",
+    "pregunta": "¿Qué palabra clave se utiliza para heredar de una clase en Java?",
+    "opciones": [
+      { "id": "a", "texto": "extends" },
+      { "id": "b", "texto": "implements" },
+      { "id": "c", "texto": "inherits" },
+      { "id": "d", "texto": "instanceof" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "La palabra clave 'extends' se usa para heredar de una clase en Java. Documentación: https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html"
+    }
+  },
+  {
+    "id": "37",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se utiliza para inyectar un recurso gestionado por el contenedor en JEE7?",
+    "opciones": [
+      { "id": "a", "texto": "@Resource" },
+      { "id": "b", "texto": "@Inject" },
+      { "id": "c", "texto": "@EJB" },
+      { "id": "d", "texto": "@PersistenceContext" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "@Resource se usa para inyectar recursos gestionados por el contenedor, como datasources o colas JMS. Documentación: https://docs.oracle.com/javaee/7/api/javax/annotation/Resource.html"
+    }
+  },
+  {
+    "id": "38",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿La función COUNT(*) en SQL cuenta filas incluso si contienen valores NULL?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "COUNT(*) cuenta todas las filas, incluidas las que contienen valores NULL. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/aggregate-functions.html"
+    }
+  },
+  {
+    "id": "39",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Qué comando CLI se usa para reiniciar el servidor en JBoss EAP 7?",
+    "opciones": [
+      { "id": "a", "texto": ":reload" },
+      { "id": "b", "texto": "shutdown" },
+      { "id": "c", "texto": "restart" },
+      { "id": "d", "texto": "reboot" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El comando :reload reinicia el servidor JBoss EAP 7 desde la CLI. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/management_cli_guide/cli-commands"
+    }
+  },
+  {
+    "id": "40",
+    "tipo": "verdadero_falso",
+    "tema": "Java SE",
+    "pregunta": "¿El método equals() en Java compara el contenido de los objetos?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El método equals() compara el contenido lógico de los objetos, a diferencia de == que compara referencias. Documentación: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-"
+    }
+  },
+  {
+    "id": "41",
+    "tipo": "simple",
+    "tema": "Java SE",
+    "pregunta": "¿Qué interfaz en Java extiende Collection y permite elementos duplicados?",
+    "opciones": [
+      { "id": "a", "texto": "List" },
+      { "id": "b", "texto": "Set" },
+      { "id": "c", "texto": "Map" },
+      { "id": "d", "texto": "Queue" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "La interfaz List permite elementos duplicados y mantiene el orden de inserción. Documentación: https://docs.oracle.com/javase/8/docs/api/java/util/List.html"
+    }
+  },
+  {
+    "id": "42",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿La anotación @PersistenceContext se utiliza para inyectar un EntityManager en JPA?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "@PersistenceContext se usa para inyectar un EntityManager en aplicaciones JPA. Documentación: https://docs.oracle.com/javaee/7/api/javax/persistence/PersistenceContext.html"
+    }
+  },
+  {
+    "id": "43",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué función SQL retorna el valor más alto de una columna?",
+    "opciones": [
+      { "id": "a", "texto": "MAX" },
+      { "id": "b", "texto": "MIN" },
+      { "id": "c", "texto": "SUM" },
+      { "id": "d", "texto": "COUNT" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "La función MAX retorna el valor máximo de una columna. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/aggregate-functions.html"
+    }
+  },
+  {
+    "id": "44",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿El archivo domain.xml se utiliza en modo domain de JBoss EAP 7?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El archivo domain.xml es el principal para la configuración en modo domain de JBoss EAP 7. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/domain_mode_configuration"
+    }
+  },
+  {
+    "id": "45",
+    "tipo": "simple",
+    "tema": "Java SE",
+    "pregunta": "¿Qué palabra clave en Java se utiliza para evitar que una clase sea heredada?",
+    "opciones": [
+      { "id": "a", "texto": "final" },
+      { "id": "b", "texto": "static" },
+      { "id": "c", "texto": "abstract" },
+      { "id": "d", "texto": "private" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "La palabra clave final evita que una clase sea heredada. Documentación: https://docs.oracle.com/javase/tutorial/java/IandI/final.html"
+    }
+  },
+  {
+    "id": "46",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se utiliza para definir un método como endpoint HTTP GET en JAX-RS?",
+    "opciones": [
+      { "id": "a", "texto": "@GET" },
+      { "id": "b", "texto": "@POST" },
+      { "id": "c", "texto": "@Path" },
+      { "id": "d", "texto": "@RequestMapping" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "@GET define un método como endpoint HTTP GET en JAX-RS. Documentación: https://docs.oracle.com/javaee/7/api/javax/ws/rs/GET.html"
+    }
+  },
+  {
+    "id": "47",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿La función NVL en Oracle permite reemplazar valores NULL por un valor dado?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "NVL permite reemplazar valores NULL por un valor especificado. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/NVL.html"
+    }
+  },
+  {
+    "id": "48",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Qué subsistema de JBoss EAP 7 se utiliza para la mensajería?",
+    "opciones": [
+      { "id": "a", "texto": "messaging-activemq" },
+      { "id": "b", "texto": "web" },
+      { "id": "c", "texto": "datasources" },
+      { "id": "d", "texto": "logging" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El subsistema messaging-activemq se utiliza para mensajería en JBoss EAP 7. Documentación: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/messaging_guide/index"
+    }
+  },
+  {
+    "id": "49",
+    "tipo": "verdadero_falso",
+    "tema": "Java SE",
+    "pregunta": "¿El operador instanceof en Java sirve para comprobar el tipo de un objeto en tiempo de ejecución?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El operador instanceof comprueba si un objeto es instancia de una clase o interfaz en tiempo de ejecución. Documentación: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html"
+    }
+  },
+  {
+    "id": "50",
+    "tipo": "simple",
+    "tema": "TDD",
+    "pregunta": "¿Cuál es el ciclo básico de TDD?",
+    "opciones": [
+      { "id": "a", "texto": "Red, Green, Refactor" },
+      { "id": "b", "texto": "Test, Debug, Deploy" },
+      { "id": "c", "texto": "Write, Compile, Run" },
+      { "id": "d", "texto": "Plan, Code, Test" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El ciclo de TDD es Red (fallar), Green (pasar), Refactor (mejorar). Fuente: Kent Beck, Test Driven Development."
+    }
+  },
+  {
+    "id": "51",
+    "tipo": "verdadero_falso",
+    "tema": "TDD",
+    "pregunta": "¿En TDD primero se escribe el código de producción y luego los tests?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "En TDD primero se escriben los tests y luego el código de producción mínimo para que pasen."
+    }
+  },
+  {
+    "id": "52",
+    "tipo": "simple",
+    "tema": "TDD",
+    "pregunta": "¿Qué beneficio principal aporta TDD al desarrollo de software?",
+    "opciones": [
+      { "id": "a", "texto": "Mejora la mantenibilidad y reduce errores" },
+      { "id": "b", "texto": "Hace el código más lento" },
+      { "id": "c", "texto": "Evita la documentación" },
+      { "id": "d", "texto": "Aumenta la complejidad innecesaria" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "TDD mejora la mantenibilidad, facilita el refactor y reduce errores al obligar a pensar en los requisitos antes de codificar."
+    }
+  },
+  {
+    "id": "53",
+    "tipo": "verdadero_falso",
+    "tema": "TDD",
+    "pregunta": "¿TDD ayuda a diseñar mejor el código y facilita el refactor?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "TDD promueve un diseño más desacoplado y facilita el refactor seguro."
+    }
+  },
+  {
+    "id": "54",
+    "tipo": "simple",
+    "tema": "TDD",
+    "pregunta": "¿Qué tipo de pruebas se escriben principalmente en TDD?",
+    "opciones": [
+      { "id": "a", "texto": "Pruebas unitarias" },
+      { "id": "b", "texto": "Pruebas de integración" },
+      { "id": "c", "texto": "Pruebas de aceptación" },
+      { "id": "d", "texto": "Pruebas manuales" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "TDD se centra en pruebas unitarias automatizadas para guiar el desarrollo."
+    }
+  },
+  {
+    "id": "55",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se utiliza para definir un endpoint REST en JEE7?",
+    "opciones": [
+      { "id": "a", "texto": "@Path" },
+      { "id": "b", "texto": "@WebService" },
+      { "id": "c", "texto": "@RestController" },
+      { "id": "d", "texto": "@Endpoint" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "@Path define la URI de un recurso REST en JAX-RS (JEE7)."
+    }
+  },
+  {
+    "id": "56",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿JBoss EAP 7 soporta despliegue en modo domain y standalone?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "JBoss EAP 7 puede operar en modo standalone o domain para administración centralizada."
+    }
+  },
+  {
+    "id": "57",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué comando SQL se usa para crear un índice en una tabla?",
+    "opciones": [
+      { "id": "a", "texto": "CREATE INDEX" },
+      { "id": "b", "texto": "ADD INDEX" },
+      { "id": "c", "texto": "NEW INDEX" },
+      { "id": "d", "texto": "MAKE INDEX" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "CREATE INDEX crea un índice en una tabla para mejorar el rendimiento de las consultas."
+    }
+  },
+  {
+    "id": "58",
+    "tipo": "verdadero_falso",
+    "tema": "Java SE",
+    "pregunta": "¿La palabra clave 'super' en Java permite acceder a métodos de la superclase?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "'super' permite acceder a métodos y constructores de la superclase en Java."
+    }
+  },
+  {
+    "id": "59",
+    "tipo": "simple",
+    "tema": "Clean Code",
+    "pregunta": "¿Qué recomienda Clean Code sobre los nombres de variables?",
+    "opciones": [
+      { "id": "a", "texto": "Nombres descriptivos y sin abreviaturas" },
+      { "id": "b", "texto": "Nombres cortos y crípticos" },
+      { "id": "c", "texto": "Nombres en mayúsculas siempre" },
+      { "id": "d", "texto": "Nombres genéricos como x, y, z" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Clean Code recomienda nombres descriptivos y sin abreviaturas para mejorar la legibilidad."
+    }
+  },
+  {
+    "id": "60",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿La sentencia ALTER TABLE permite agregar columnas a una tabla existente?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "ALTER TABLE permite agregar, modificar o eliminar columnas en una tabla existente."
+    }
+  },
+  {
+    "id": "61",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Qué palabra clave se utiliza para declarar una variable en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "DECLARE" },
+      { "id": "b", "texto": "VAR" },
+      { "id": "c", "texto": "LET" },
+      { "id": "d", "texto": "SET" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "DECLARE se utiliza para declarar variables en un bloque PL/SQL. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/plsql-variables-and-constants.html"
+    }
+  },
+  {
+    "id": "62",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Las funciones en PL/SQL pueden retornar más de un valor directamente?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "Las funciones en PL/SQL solo pueden retornar un valor directamente, aunque pueden modificar variables OUT."
+    }
+  },
+  {
+    "id": "63",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Cuál es el delimitador de fin de bloque en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": ";" },
+      { "id": "b", "texto": "/" },
+      { "id": "c", "texto": "END;" },
+      { "id": "d", "texto": "FIN" }
+    ],
+    "respuesta": ["c"],
+    "justificaciones": {
+      "c": "END; es el delimitador que indica el final de un bloque PL/SQL."
+    }
+  },
+  {
+    "id": "64",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Se puede usar un cursor explícito para recorrer resultados en PL/SQL?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "Los cursores explícitos permiten recorrer resultados de consultas en PL/SQL."
+    }
+  },
+  {
+    "id": "65",
+    "tipo": "simple",
+    "tema": "Oracle (Admin DB)",
+    "pregunta": "¿Qué comando se usa para crear un usuario en Oracle DB?",
+    "opciones": [
+      { "id": "a", "texto": "CREATE USER" },
+      { "id": "b", "texto": "ADD USER" },
+      { "id": "c", "texto": "NEW USER" },
+      { "id": "d", "texto": "USER CREATE" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "CREATE USER crea un nuevo usuario en Oracle DB. Documentación: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-USER.html"
+    }
+  },
+  {
+    "id": "66",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (Admin DB)",
+    "pregunta": "¿El rol DBA otorga todos los privilegios administrativos en Oracle?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El rol DBA otorga privilegios administrativos completos."
+    }
+  },
+  {
+    "id": "67",
+    "tipo": "simple",
+    "tema": "Oracle (Admin DB)",
+    "pregunta": "¿Qué vista muestra los usuarios actuales en la base de datos?",
+    "opciones": [
+      { "id": "a", "texto": "DBA_USERS" },
+      { "id": "b", "texto": "ALL_USERS" },
+      { "id": "c", "texto": "USER_USERS" },
+      { "id": "d", "texto": "V$USERS" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "DBA_USERS muestra todos los usuarios de la base de datos."
+    }
+  },
+  {
+    "id": "68",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (Admin DB)",
+    "pregunta": "¿Se puede cambiar la contraseña de un usuario con ALTER USER?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "ALTER USER permite cambiar la contraseña de un usuario."
+    }
+  },
+  {
+    "id": "69",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué sentencia SQL se usa para eliminar filas específicas de una tabla?",
+    "opciones": [
+      { "id": "a", "texto": "DELETE" },
+      { "id": "b", "texto": "DROP" },
+      { "id": "c", "texto": "REMOVE" },
+      { "id": "d", "texto": "TRUNCATE" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "DELETE elimina filas específicas según la condición WHERE."
+    }
+  },
+  {
+    "id": "70",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿La función SUM() puede usarse solo con columnas numéricas?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "SUM() solo opera sobre columnas numéricas."
+    }
+  },
+  {
+    "id": "71",
+    "tipo": "simple",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿Qué operador se usa para concatenar cadenas en Oracle SQL?",
+    "opciones": [
+      { "id": "a", "texto": "||" },
+      { "id": "b", "texto": "+" },
+      { "id": "c", "texto": "CONCAT" },
+      { "id": "d", "texto": "&" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El operador || concatena cadenas en Oracle SQL."
+    }
+  },
+  {
+    "id": "72",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (SQL)",
+    "pregunta": "¿La cláusula WHERE es obligatoria en una sentencia SELECT?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "WHERE es opcional en SELECT."
+    }
+  },
+  {
+    "id": "73",
+    "tipo": "simple",
+    "tema": "Clean Code",
+    "pregunta": "¿Qué recomienda Clean Code sobre los comentarios en el código?",
+    "opciones": [
+      { "id": "a", "texto": "Solo cuando son necesarios y no reemplazan un buen nombre" },
+      { "id": "b", "texto": "Comentar todo el código" },
+      { "id": "c", "texto": "No usar comentarios nunca" },
+      { "id": "d", "texto": "Usar comentarios para ocultar código" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Clean Code recomienda comentarios solo cuando son realmente necesarios."
+    }
+  },
+  {
+    "id": "74",
+    "tipo": "verdadero_falso",
+    "tema": "Clean Code",
+    "pregunta": "¿Es recomendable usar nombres de variables ambiguos según Clean Code?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "Clean Code recomienda evitar nombres ambiguos."
+    }
+  },
+  {
+    "id": "75",
+    "tipo": "simple",
+    "tema": "Clean Code",
+    "pregunta": "¿Qué recomienda Clean Code sobre la cantidad de argumentos en una función?",
+    "opciones": [
+      { "id": "a", "texto": "Lo menos posible, idealmente uno o dos" },
+      { "id": "b", "texto": "Cinco o más" },
+      { "id": "c", "texto": "No importa la cantidad" },
+      { "id": "d", "texto": "Tantos como sea necesario" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Menos argumentos facilitan la comprensión y el testeo."
+    }
+  },
+  {
+    "id": "76",
+    "tipo": "verdadero_falso",
+    "tema": "Clean Code",
+    "pregunta": "¿Clean Code promueve el uso de funciones largas y complejas?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "Promueve funciones cortas y simples."
+    }
+  },
+  {
+    "id": "77",
+    "tipo": "simple",
+    "tema": "SOLID",
+    "pregunta": "¿Qué principio SOLID sugiere que los módulos de alto nivel no deben depender de módulos de bajo nivel?",
+    "opciones": [
+      { "id": "a", "texto": "DIP" },
+      { "id": "b", "texto": "OCP" },
+      { "id": "c", "texto": "SRP" },
+      { "id": "d", "texto": "ISP" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "El principio de inversión de dependencias (DIP) lo establece."
+    }
+  },
+  {
+    "id": "78",
+    "tipo": "verdadero_falso",
+    "tema": "SOLID",
+    "pregunta": "¿El principio ISP sugiere que las interfaces deben ser lo más grandes posible?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "ISP promueve interfaces pequeñas y específicas."
+    }
+  },
+  {
+    "id": "79",
+    "tipo": "simple",
+    "tema": "SOLID",
+    "pregunta": "¿Qué principio SOLID ayuda a evitar la duplicidad de código mediante la herencia?",
+    "opciones": [
+      { "id": "a", "texto": "LSP" },
+      { "id": "b", "texto": "OCP" },
+      { "id": "c", "texto": "SRP" },
+      { "id": "d", "texto": "DRY" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "LSP fomenta la reutilización y evita duplicidad."
+    }
+  },
+  {
+    "id": "80",
+    "tipo": "verdadero_falso",
+    "tema": "SOLID",
+    "pregunta": "¿El principio OCP implica que el código debe ser fácilmente extensible?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "OCP promueve la extensibilidad sin modificar el código existente."
+    }
+  },
+  {
+    "id": "81",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se utiliza para definir un bean singleton en JEE7?",
+    "opciones": [
+      { "id": "a", "texto": "@Singleton" },
+      { "id": "b", "texto": "@Stateless" },
+      { "id": "c", "texto": "@Entity" },
+      { "id": "d", "texto": "@EJB" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "@Singleton define un bean singleton en JEE7."
+    }
+  },
+  {
+    "id": "82",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿JAX-RS es la API de Java para servicios RESTful?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "JAX-RS es la API estándar para servicios REST en Java EE."
+    }
+  },
+  {
+    "id": "83",
+    "tipo": "simple",
+    "tema": "JEE7",
+    "pregunta": "¿Qué anotación se usa para inyectar un EntityManager en JPA?",
+    "opciones": [
+      { "id": "a", "texto": "@PersistenceContext" },
+      { "id": "b", "texto": "@Inject" },
+      { "id": "c", "texto": "@EJB" },
+      { "id": "d", "texto": "@Resource" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "@PersistenceContext inyecta un EntityManager en JPA."
+    }
+  },
+  {
+    "id": "84",
+    "tipo": "verdadero_falso",
+    "tema": "JEE7",
+    "pregunta": "¿Un bean @Stateless puede mantener estado entre llamadas de cliente?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "@Stateless no mantiene estado entre llamadas."
+    }
+  },
+  {
+    "id": "85",
+    "tipo": "simple",
+    "tema": "Java SE",
+    "pregunta": "¿Qué palabra clave se usa para implementar una interfaz en Java?",
+    "opciones": [
+      { "id": "a", "texto": "implements" },
+      { "id": "b", "texto": "extends" },
+      { "id": "c", "texto": "interface" },
+      { "id": "d", "texto": "instanceof" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "implements se usa para implementar interfaces."
+    }
+  },
+  {
+    "id": "86",
+    "tipo": "verdadero_falso",
+    "tema": "Java SE",
+    "pregunta": "¿Una clase abstracta puede tener métodos concretos en Java?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "Las clases abstractas pueden tener métodos concretos y abstractos."
+    }
+  },
+  {
+    "id": "87",
+    "tipo": "simple",
+    "tema": "Java SE",
+    "pregunta": "¿Qué método se sobrescribe para imprimir un objeto como texto en Java?",
+    "opciones": [
+      { "id": "a", "texto": "toString()" },
+      { "id": "b", "texto": "print()" },
+      { "id": "c", "texto": "show()" },
+      { "id": "d", "texto": "display()" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "toString() se sobrescribe para mostrar el objeto como texto."
+    }
+  },
+  {
+    "id": "88",
+    "tipo": "verdadero_falso",
+    "tema": "Java SE",
+    "pregunta": "¿El método main() en Java puede ser sobrecargado?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "main() puede ser sobrecargado, pero solo la firma estándar es punto de entrada."
+    }
+  },
+  {
+    "id": "89",
+    "tipo": "simple",
+    "tema": "JSF",
+    "pregunta": "¿Qué archivo de configuración es fundamental en una aplicación JSF?",
+    "opciones": [
+      { "id": "a", "texto": "faces-config.xml" },
+      { "id": "b", "texto": "web.xml" },
+      { "id": "c", "texto": "beans.xml" },
+      { "id": "d", "texto": "jsf.xml" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "faces-config.xml es esencial para la configuración de JSF."
+    }
+  },
+  {
+    "id": "90",
+    "tipo": "verdadero_falso",
+    "tema": "JSF",
+    "pregunta": "¿JSF permite el uso de plantillas para reutilizar layouts?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "JSF soporta plantillas para layouts reutilizables."
+    }
+  },
+  {
+    "id": "91",
+    "tipo": "simple",
+    "tema": "JSF",
+    "pregunta": "¿Qué anotación permite inyectar un bean en JSF usando CDI?",
+    "opciones": [
+      { "id": "a", "texto": "@Named" },
+      { "id": "b", "texto": "@Inject" },
+      { "id": "c", "texto": "@ManagedBean" },
+      { "id": "d", "texto": "@Bean" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "@Named permite inyectar beans con CDI en JSF."
+    }
+  },
+  {
+    "id": "92",
+    "tipo": "verdadero_falso",
+    "tema": "JSF",
+    "pregunta": "¿JSF utiliza Facelets como motor de vistas por defecto?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "Facelets es el motor de vistas por defecto en JSF."
+    }
+  },
+  {
+    "id": "93",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Qué archivo define los módulos en JBoss EAP 7?",
+    "opciones": [
+      { "id": "a", "texto": "module.xml" },
+      { "id": "b", "texto": "standalone.xml" },
+      { "id": "c", "texto": "domain.xml" },
+      { "id": "d", "texto": "jboss-modules.xml" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "module.xml define los módulos en JBoss EAP 7."
+    }
+  },
+  {
+    "id": "94",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿El subsistema logging permite configurar logs en JBoss EAP 7?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "El subsistema logging gestiona los logs en JBoss EAP 7."
+    }
+  },
+  {
+    "id": "95",
+    "tipo": "simple",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿Qué comando CLI muestra el estado del servidor en JBoss EAP 7?",
+    "opciones": [
+      { "id": "a", "texto": ":read-attribute(name=server-state)" },
+      { "id": "b", "texto": "status" },
+      { "id": "c", "texto": "show status" },
+      { "id": "d", "texto": "server-state" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": ":read-attribute(name=server-state) muestra el estado del servidor."
+    }
+  },
+  {
+    "id": "96",
+    "tipo": "verdadero_falso",
+    "tema": "JBoss EAP 7",
+    "pregunta": "¿JBoss EAP 7 soporta clustering para alta disponibilidad?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "JBoss EAP 7 soporta clustering para HA."
+    }
+  },
+  {
+    "id": "97",
+    "tipo": "simple",
+    "tema": "TDD",
+    "pregunta": "¿Qué es un test doble en TDD?",
+    "opciones": [
+      { "id": "a", "texto": "Un objeto que simula el comportamiento de dependencias" },
+      { "id": "b", "texto": "Un test que se ejecuta dos veces" },
+      { "id": "c", "texto": "Un test que prueba dos métodos" },
+      { "id": "d", "texto": "Un test que duplica código" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Un test doble simula dependencias (mock, stub, spy, fake)."
+    }
+  },
+  {
+    "id": "98",
+    "tipo": "verdadero_falso",
+    "tema": "TDD",
+    "pregunta": "¿TDD promueve la escritura de código acoplado?",
+    "opciones": null,
+    "respuesta": ["falso"],
+    "justificaciones": {
+      "falso": "TDD promueve código desacoplado y testeable."
+    }
+  },
+  {
+    "id": "99",
+    "tipo": "simple",
+    "tema": "TDD",
+    "pregunta": "¿Qué significa refactorizar en el ciclo TDD?",
+    "opciones": [
+      { "id": "a", "texto": "Mejorar el código sin cambiar su funcionalidad" },
+      { "id": "b", "texto": "Eliminar pruebas" },
+      { "id": "c", "texto": "Agregar nuevas funcionalidades" },
+      { "id": "d", "texto": "Duplicar código" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": {
+      "a": "Refactorizar es mejorar el diseño sin cambiar el comportamiento."
+    }
+  },
+  {
+    "id": "100",
+    "tipo": "verdadero_falso",
+    "tema": "TDD",
+    "pregunta": "¿En TDD los tests deben ser automáticos y repetibles?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": {
+      "verdadero": "Los tests en TDD deben ser automáticos y repetibles para garantizar calidad."
+    }
+  },
+  {
+    "id": "101",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Qué palabra clave se utiliza para manejar excepciones en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "EXCEPTION" },
+      { "id": "b", "texto": "CATCH" },
+      { "id": "c", "texto": "TRY" },
+      { "id": "d", "texto": "ERROR" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": { "a": "EXCEPTION es la palabra clave para manejar excepciones en PL/SQL." }
+  },
+  {
+    "id": "102",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Un trigger en PL/SQL puede ejecutarse antes o después de una operación DML?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": { "verdadero": "Los triggers pueden ser BEFORE o AFTER en PL/SQL." }
+  },
+  {
+    "id": "103",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Cuál es el tipo de dato adecuado para almacenar texto en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "VARCHAR2" },
+      { "id": "b", "texto": "NUMBER" },
+      { "id": "c", "texto": "DATE" },
+      { "id": "d", "texto": "BOOLEAN" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": { "a": "VARCHAR2 es el tipo de dato para texto en PL/SQL." }
+  },
+  {
+    "id": "104",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Se pueden declarar constantes en PL/SQL?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": { "verdadero": "PL/SQL permite declarar constantes usando CONSTANT." }
+  },
+  {
+    "id": "105",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Qué palabra clave se usa para definir un cursor en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "CURSOR" },
+      { "id": "b", "texto": "POINTER" },
+      { "id": "c", "texto": "REF" },
+      { "id": "d", "texto": "FETCH" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": { "a": "CURSOR se usa para definir cursores en PL/SQL." }
+  },
+  {
+    "id": "106",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿PL/SQL permite el uso de bucles FOR y WHILE?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": { "verdadero": "PL/SQL soporta bucles FOR y WHILE." }
+  },
+  {
+    "id": "107",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Qué palabra clave se usa para finalizar un bloque PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "END;" },
+      { "id": "b", "texto": "FINISH;" },
+      { "id": "c", "texto": "STOP;" },
+      { "id": "d", "texto": "CLOSE;" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": { "a": "END; finaliza un bloque PL/SQL." }
+  },
+  {
+    "id": "108",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Las funciones en PL/SQL pueden ser llamadas desde SQL?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": { "verdadero": "Las funciones pueden ser llamadas desde sentencias SQL." }
+  },
+  {
+    "id": "109",
+    "tipo": "simple",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿Qué palabra clave se usa para lanzar una excepción en PL/SQL?",
+    "opciones": [
+      { "id": "a", "texto": "RAISE" },
+      { "id": "b", "texto": "THROW" },
+      { "id": "c", "texto": "ERROR" },
+      { "id": "d", "texto": "EXCEPTION" }
+    ],
+    "respuesta": ["a"],
+    "justificaciones": { "a": "RAISE lanza una excepción en PL/SQL." }
+  },
+  {
+    "id": "110",
+    "tipo": "verdadero_falso",
+    "tema": "Oracle (PL/SQL)",
+    "pregunta": "¿PL/SQL permite el uso de procedimientos almacenados?",
+    "opciones": null,
+    "respuesta": ["verdadero"],
+    "justificaciones": { "verdadero": "PL/SQL permite crear y usar procedimientos almacenados." }
+  }
+]

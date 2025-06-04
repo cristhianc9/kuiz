@@ -1,0 +1,46 @@
+# Logs and databases
+*.log
+*.sql
+*.data
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+docs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# really depends on your workflow
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtualenv
+.venv
+venv/

@@ -340,46 +340,38 @@ export function getMultipleJustifications(question) {
 export function getSummaryHTML(numQuestionsConfig, themeScores, percentage, questions) {
     let totalCorrect = 0;
     let totalIncorrect = 0;
-    let themeRows = '';
-
+    let themeCards = '';
     const themes = [...new Set(questions.map(question => question.tema))];
     for (const theme of themes) {
         const correct = themeScores[theme] ? themeScores[theme].correct : 0;
         const incorrect = themeScores[theme] ? themeScores[theme].incorrect : 0;
         const numQuestionsInTheme = correct + incorrect;
-        const average = numQuestionsInTheme > 0 ? correct / numQuestionsInTheme : 0;
-
-        totalCorrect += correct;
-        totalIncorrect += incorrect;
-
-        themeRows +=
-            '<tr>' +
-            '<td>' + theme + '</td>' +
-            '<td>' + numQuestionsInTheme + '</td>' +
-            '<td>' + correct + '</td>' +
-            '<td>' + incorrect + '</td>' +
-            '<td>' + average.toFixed(2) + '</td>' +
-            '</tr>';
+        const percent = numQuestionsInTheme > 0 ? Math.round((correct / numQuestionsInTheme) * 100) : 0;
+        const color = percent >= 70 ? '#27ae60' : percent >= 50 ? '#f1c40f' : '#e74c3c';
+        themeCards += `
+            <div class="summary-theme-card">
+                <div class="summary-theme-title">${theme}</div>
+                <div class="summary-theme-bar-container">
+                    <div class="summary-theme-bar-bg">
+                        <div class="summary-theme-bar" style="width:${percent}%; background:${color}"></div>
+                    </div>
+                    <span class="summary-theme-percent" style="color:${color}">${percent}%</span>
+                </div>
+                <div class="summary-theme-data-row">
+                    <span title="Correctas" class="summary-theme-icon success">✔️ ${correct}</span>
+                    <span title="Incorrectas" class="summary-theme-icon error">❌ ${incorrect}</span>
+                    <span title="Total preguntas" class="summary-theme-icon total">📋 ${numQuestionsInTheme}</span>
+                </div>
+            </div>
+        `;
     }
-
     return `
         <h3>Resumen del Cuestionario</h3>
         <p>Puntaje total: <span class="score-percentage ${getScoreClass(percentage)}">${percentage.toFixed(2)}%</span></p>
         <p>Puntaje por tema:</p>
-        <table class="summary-table">
-            <thead>
-                <tr>
-                    <th>Tema</th>
-                    <th># Preguntas</th>
-                    <th>Correctas</th>
-                    <th>Incorrectas</th>
-                    <th>Promedio</th>
-                </tr>
-            </thead>
-            <tbody>
-                ${themeRows}
-            </tbody>
-        </table>
+        <div class="summary-theme-cards-flex">
+            ${themeCards}
+        </div>
     `;
 }
 
